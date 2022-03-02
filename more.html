@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>더보기 | 달고나톡</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Mobile Only -->
+    <div class="mobile-only-screen">
+      <span>
+        &#34;달고나톡은 현재 보고 계신 화면보다 <br />
+        더 작은 화면에서 실행이 가능합니다!&#34;
+      </span>
+    </div>
+
+    <div class="header-status-pagination">
+      <div class="status-bar">
+        <div class="status-bar__container">
+          <div class="status-bar__column">
+            <i class="fa-solid fa-signal"></i>
+            <span class="carrier-name">DAL</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span class="time">오후 3&#58;26</span>
+          </div>
+          <div class="status-bar__column">
+            <span>100&#37;</span>
+            <span class="battery">
+              <i class="fa-solid fa-battery-full"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <header class="page-header">
+        <h1 class="page-header__title">더보기</h1>
+        <div class="page-header__icons">
+          <span class="header__btn--search">
+            <i class="fas fa-search fa-lg"></i>
+          </span>
+          <span class="btn--music">
+            <i class="fas fa-music fa-lg"></i>
+          </span>
+          <span class="btn--to-setting">
+            <a href="./settings.html">
+              <i class="fas fa-cog fa-lg">
+                <span class="noti noti-for-cog"></span>
+              </i>
+            </a>
+          </span>
+        </div>
+      </header>
+    </div>
+
+    <main class="main main-more">
+      <div class="user-profile-component user-self first-user more-profile">
+        <div class="user-profile-component__column">
+          <div class="profile-img-wrap">
+            <img src="./img/rabbit.png" alt="유저 프로필 사진" />
+          </div>
+        </div>
+        <div class="user-profile-component__column">
+          <div class="user-profile-text">
+            <h4 class="user-name">Brave Rabbit</h4>
+          </div>
+          <div class="status-message more-address">
+            <p>callme-braveRabbit@rabbit.com</p>
+          </div>
+        </div>
+        <div class="user-profile-component__column more-pay">
+          <a href="#none">
+            <i class="fas fa-wallet"></i>
+            <span>Dal-Pay</span>
+          </a>
+        </div>
+      </div>
+
+      <section class="more-icons">
+        <h2 class="sr-only">개인 서비스</h2>
+        <div class="more-icons-row">
+          <div class="more-icons__icon">
+            <a href="#" class="more-icon__link">
+              <i class="fas fa-calendar-alt"></i>
+              <span>달력</span>
+            </a>
+          </div>
+          <div class="more-icons__icon">
+            <a href="#" class="more-icon__link">
+              <i class="fa-solid fa-face-surprise"></i>
+              <span>이모티콘</span>
+            </a>
+          </div>
+          <div class="more-icons__icon">
+            <a href="#" class="more-icon__link">
+              <i class="fa-solid fa-piggy-bank"></i>
+              <span>은행</span>
+            </a>
+          </div>
+          <div class="more-icons__icon">
+            <a href="#none" class="more-icon__link">
+              <i class="fa-solid fa-envelope"></i>
+              <span>메일</span>
+            </a>
+          </div>
+        </div>
+        <div class="more-icons-row">
+          <div class="more-icons__icon">
+            <a href="#none" class="more-icon__link">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span>쇼핑</span>
+            </a>
+          </div>
+          <div class="more-icons__icon">
+            <a href="#none" class="more-icon__link">
+              <i class="fa-solid fa-gamepad"></i>
+              <span>게임</span>
+            </a>
+          </div>
+          <div class="more-icons__icon">
+            <a href="#none" class="more-icon__link">
+              <i class="fa-solid fa-ticket"></i>
+              <span>티켓</span>
+            </a>
+          </div>
+          <div class="more-icons__icon">
+            <a href="#none" class="more-icon__link">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <span>음식</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="recommended more-ad">
+        <h2 class="sr-only">컨텐츠 추천</h2>
+        <div class="more-ad-header">
+          <h3 class="recommended__title">연극 '파라다이스' 특별 이벤트</h3>
+          <p class="recommended__description">
+            추첨을 통하여 달고나 유저 10분께 연극 '파라다이스' 티켓을 드립니다!
+          </p>
+        </div>
+        <div class="recommended__img more-recommended">
+          <a href="#none">
+            <img src="./img/theater.jpg" alt="연극 파라다이스" />
+          </a>
+        </div>
+      </section>
+      <section class="recommended more-ad">
+        <h2 class="sr-only">달고나 공지사항</h2>
+        <div class="more-ad-header">
+          <h3 class="recommended__titl now-dalgona-title">
+            지금 달고나에서는..
+          </h3>
+        </div>
+        <div class="recommended__img more-recommended ad">
+          <a href="#none">
+            <img src="./img/Group 1.svg" alt="달고나 " />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a href="./friends.html">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./chat-list.html">
+            <div class="noti noti-count noti-for-comment">
+              <span>1</span>
+            </div>
+            <i class="fa-regular fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./find.html">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./more.html">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

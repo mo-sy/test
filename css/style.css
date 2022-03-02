@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&display=swap");
+
+@import url(./reset.css);
+@import url(./variables.css);
+
+/* Component */
+@import url(./components/status-bar.css);
+@import url(./components/mobile-only-screen.css);
+@import url(./components/user-profile-component.css);
+@import url(./components/nav-bar.css);
+@import url(./components/badge.css);
+@import url(./components/page-header.css);
+@import url(./components/keyboard.css);
+@import url(./components/buttons.css);
+@import url(./components/splash.css);
+@import url(./components/animations-list.css);
+
+/* Screen */
+@import url(./screen/welcome.css);
+@import url(./screen/friends.css);
+@import url(./screen/chat-list.css);
+@import url(./screen/chats.css);
+@import url(./screen/find.css);
+@import url(./screen/more.css);
+@import url(./screen/settings.css);
+
+/* Responsive */
+@import url(./sm-screen.css);
+
+html {
+  scroll-behavior: smooth;
+  animation: fade-in-all 0.4s ease-in;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(57, 57, 57);
+  word-break: keep-all;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  /* padding: 104px var(--horizontal-space) 0; */
+  padding: 100px var(--horizontal-space) 60px;
+}

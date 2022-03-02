@@ -1,0 +1,14 @@
+/* index */
+.btn--login {
+  background-color: var(--purple);
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgb(235, 235, 235);
+}

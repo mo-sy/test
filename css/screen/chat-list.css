@@ -1,0 +1,28 @@
+.main.chat-list-main {
+  padding: 108px 0 60px;
+}
+
+.chat-list li {
+  padding: 10px 10px;
+}
+
+.chat-list li:hover {
+  color: #fff;
+  background-color: rgba(102, 103, 171, 0.7);
+}
+
+.chat-list li:hover .send-time {
+  color: #fff;
+}
+
+.chat-list li:hover .send-time .chat-list li:active {
+  background-color: rgb(177, 7, 7);
+}
+
+.chat-message {
+  width: 260px;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

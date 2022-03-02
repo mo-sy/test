@@ -1,0 +1,61 @@
+.header-status-pagination {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid var(--main-border-color);
+  z-index: 999;
+}
+
+.page-header {
+  padding: 20px var(--horizontal-space);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.page-header__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.page-header__icons {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.page-header__icons span {
+  margin-left: 20px;
+}
+
+.page-header__column {
+  width: 33.33333%;
+}
+
+.page-header__column:nth-child(2) {
+  text-align: center;
+}
+
+.page-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Animation */
+.btn--to-setting:hover .noti-for-cog {
+  animation: upAndDown 1s infinite;
+}
+
+.btn--music:hover .fa-music {
+  animation: shake 1s infinite;
+}
+
+.fa-search {
+  transition: trasform 0.3s;
+}
+
+.btn--add-chat:hover .fa-comment-medical,
+.header__btn--search:hover .fa-search {
+  animation: enlargement 1s infinite;
+}

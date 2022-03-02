@@ -1,0 +1,114 @@
+.main.main-more {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.more-profile {
+  background-color: var(--purple);
+  color: #fff;
+  padding: 24px;
+}
+
+.more-address {
+  color: #fff;
+}
+
+.user-profile-component__column.more-pay {
+  position: relative;
+  margin-left: auto;
+  text-align: center;
+  border: 2px solid #fff;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+  border-radius: 4px;
+}
+
+.user-profile-component__column.more-pay span {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.user-profile-component__column.more-pay:hover {
+  border: 2px solid rgb(200, 255, 0);
+  animation: move-line 2s infinite;
+}
+
+@keyframes move-line {
+  25% {
+    border-top: 2px solid #fff;
+  }
+  50% {
+    border-right: 2px solid #fff;
+  }
+  75% {
+    border-bottom: 2px solid #fff;
+  }
+  100% {
+    border-left: 2px solid #fff;
+  }
+}
+
+.user-profile-component__column.more-pay i {
+  font-size: 24px;
+}
+
+.more-icons {
+  padding: 40px 20px;
+}
+
+.more-icons__icon:hover .more-icon__link i {
+  opacity: 0.8;
+}
+
+.more-icons-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.more-icons-row:last-child {
+  margin-bottom: 0;
+}
+
+.more-icons__icon {
+  width: 33%;
+}
+
+.more-icon__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300;
+}
+
+.more-icons__icon i {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.recommended.more-ad {
+  border-bottom: none;
+}
+
+.more-ad-header {
+  padding: 0 30px;
+}
+
+.recommended__description {
+  margin-bottom: 8px;
+}
+
+.now-dalgona-title {
+  margin-bottom: 10px;
+}
+
+.recommended__img.more-recommended {
+  width: 90%;
+}
+
+.more-ad .ad img {
+  transform: scale(1);
+}

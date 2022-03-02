@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>찾기 | 달고나톡</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Mobile Only -->
+    <div class="mobile-only-screen">
+      <span>
+        &#34;달고나톡은 현재 보고 계신 화면보다 <br />
+        더 작은 화면에서 실행이 가능합니다!&#34;
+      </span>
+    </div>
+
+    <div class="header-status-pagination">
+      <div class="status-bar">
+        <div class="status-bar__container">
+          <div class="status-bar__column">
+            <i class="fa-solid fa-signal"></i>
+            <span class="carrier-name">DAL</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span class="time">오후 3&#58;26</span>
+          </div>
+          <div class="status-bar__column">
+            <span>100&#37;</span>
+            <span class="battery">
+              <i class="fa-solid fa-battery-full"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <header class="page-header">
+        <h1 class="page-header__title">찾기</h1>
+        <div class="page-header__icons">
+          <span class="header__btn--search">
+            <i class="fas fa-search fa-lg"></i>
+          </span>
+          <span class="btn--to-setting">
+            <a href="./settings.html">
+              <i class="fas fa-cog fa-lg">
+                <span class="noti noti-for-cog"></span>
+              </i>
+            </a>
+          </span>
+        </div>
+      </header>
+    </div>
+
+    <main class="main">
+      <section class="add-friends">
+        <h2 class="sr-only">친구추가</h2>
+        <ul class="add-friends-tab">
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-qrcode"></i>
+              <span>QR 코드</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-solid fa-address-book"></i>
+              <span>연락처로 추가</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-regular fa-id-badge"></i>
+              <span>ID로 추가</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-user-plus"></i>
+              <span>추천 친구</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="recommended">
+        <h2 class="sr-only">컨텐츠 추천</h2>
+        <h3 class="recommended__title">이달의 추천 사진</h3>
+        <p class="recommended__description">
+          한달에 한 번 유저분들께서 올려주신 사진이 올라옵니다!
+        </p>
+        <div class="recommended__img">
+          <img src="./img/doggy.jpg" alt="잠자는 강아지" />
+        </div>
+        <div class="recommended__img-desc">
+          <a href="#none">&#35;우리강아지</a><a href="#none">&#35;너무이뻐요</a>
+        </div>
+      </section>
+      <!-- Open Chat Section -->
+      <section class="open-chat">
+        <h2 class="sr-only">오픈채팅방</h2>
+        <div class="open-chat__header">
+          <h3 class="open-chat-header__title">추천 오픈채팅방</h3>
+          <a class="open-chat-header__more">
+            더 많은 오픈채팅방 <i class="fas fa-angle-right"></i>
+          </a>
+        </div>
+
+        <ul class="open-chat-rooms">
+          <li>
+            <a href="#none">
+              <div class="open-chat-room">
+                <div class="open-chat-room__column">
+                  <h3 class="open-chat-room-title">RedVelvet</h3>
+                  <div class="open-chat-room-hash">
+                    <span>&#35;레드벨벳</span>
+                    <span>&#35;영원히포에버</span>
+                  </div>
+                  <div class="open-chat-users">
+                    <div class="open-chat-users__avatar">
+                      <img
+                        src="./img/dog.jpg"
+                        alt="오픈채팅방 유저 프로필 이미지"
+                      />
+                    </div>
+                    <div class="open-chat-users__num-of-people">3000명</div>
+                  </div>
+                </div>
+                <div class="open-chat-room__column">
+                  <div class="open-chat-room__pic">
+                    <img src="./img/redvelvet.jpeg" alt="오픈채팅 대표사진" />
+                    <div class="open-chat-heart-count">
+                      <i class="fas fa-heart"></i>
+                      <span>2000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#none">
+              <div class="open-chat-room">
+                <div class="open-chat-room__column">
+                  <h3 class="open-chat-room-title">음악 추천방</h3>
+                  <div class="open-chat-room-hash">
+                    <span>&#35;매일듣고싶은노래</span>
+                    <span>&#35;좋은노래추천</span>
+                  </div>
+                  <div class="open-chat-users">
+                    <div class="open-chat-users__avatar">
+                      <img
+                        src="./img/cow.jpg"
+                        alt="오픈채팅방 유저 프로필 이미지"
+                      />
+                    </div>
+                    <div class="open-chat-users__num-of-people">200명</div>
+                  </div>
+                </div>
+                <div class="open-chat-room__column">
+                  <div class="open-chat-room__pic">
+                    <img src="./img/tape.jpg" alt="오픈채팅 대표사진" />
+                    <div class="open-chat-heart-count">
+                      <i class="fas fa-heart"></i>
+                      <span>100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="space"></div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a href="./friends.html">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./chat-list.html">
+            <div class="noti noti-count noti-for-comment">
+              <span>1</span>
+            </div>
+            <i class="fa-regular fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./find.html">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./more.html">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

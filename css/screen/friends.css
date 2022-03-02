@@ -1,0 +1,160 @@
+.main.friends-main {
+  padding-top: 108px;
+  padding-bottom: 80px;
+  padding-right: 0;
+  padding-left: 0;
+}
+.main.friends-main .user-profile-component {
+  cursor: pointer;
+  padding: 0;
+  padding: 20px;
+}
+
+.friends-channel__header {
+  padding: 8px 20px;
+  /* border: 1px solid darkblue; */
+  color: var(--gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main.friends-main .first-user {
+  padding: 40px 20px;
+}
+
+.first-user,
+.friends-channel .user-profile-component {
+  border-bottom: 1px solid var(--main-border-color);
+}
+
+.friends-main .user-profile-component:hover {
+  background-color: #eee;
+}
+
+/* Hidden Profile */
+
+.hidden-profile {
+  color: #fff;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  width: 100%;
+  transition: bottom 0.4s;
+}
+
+.hidden-profile button {
+  font-size: 24px;
+}
+
+.hidden-profile i {
+  color: #fff;
+}
+
+.hidden-profile i:hover {
+  color: rgb(221, 221, 221);
+}
+
+.hidden-profile.show {
+  bottom: 0;
+}
+
+.hidden-profile {
+  background-color: rgb(0, 88, 139);
+}
+
+.hidden-profile.hidden-profile--rabbit {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../img/profile-bg/street.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.hidden-profile.hidden-profile--cookie {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../img/profile-bg/cookies.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.hidden-profile.hidden-profile--coco {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../img/profile-bg/dogs.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.hidden-profile.hidden-profile--lion {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../img/profile-bg/lions.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.hidden-profile.hidden-profile--tom {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../img/profile-bg/sea.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hidden-profile .status-bar__container {
+  background-color: transparent;
+}
+
+.hidden-profile__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.btn--gift {
+  margin-right: 30px;
+}
+
+.hidden-profile__profile {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.hidden-profile__wrap {
+  padding: 40px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.hidden-profile__btns {
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hidden-profile__profile .profile-img-wrap {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.hidden-profile__profile .user-name {
+  font-weight: 300;
+}
+
+.btn--chat,
+.btn--call,
+.btn--message {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+}
+
+.btn--message span,
+.btn--chat span,
+.btn--call span {
+  margin-top: 10px;
+  font-size: 12px;
+}

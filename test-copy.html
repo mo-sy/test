@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scale=no,maximum-scale=1"
+    />
+    <title>TEST | 달고나톡</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Simple Keyboard CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+</head>
+  </head>
+  <body class="chats-background">
+    <!-- Mobile Only -->
+    <div class="mobile-only-screen">
+      <span>
+        &#34;달고나톡은 현재 보고 계신 화면보다 <br />
+        더 작은 화면에서 실행이 가능합니다!&#34;
+      </span>
+    </div>
+    <header class="header-status-user">
+      <div class="status-bar">
+        <div class="status-bar__container chats-background">
+          <div class="status-bar__column">
+            <i class="fa-solid fa-signal"></i>
+            <span class="carrier-name">DAL</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span class="time">오후 3&#58;26</span>
+          </div>
+          <div class="status-bar__column">
+            <span>100&#37;</span>
+            <span class="battery">
+              <i class="fa-solid fa-battery-full"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <header class="chats-header">
+        <div class="chats-header__column">
+          <a href="./chat-list.html">
+            <i class="fa-solid fa-angle-left"></i>
+          </a>
+        </div>
+        <div class="chats-header__column">
+          <h1 class="chats-header-name">TEST</h1>
+        </div>
+        <div class="chats-header__column">
+          <span>
+            <i class="fas fa-search fa-lg"></i>
+          </span>
+          <span>
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </div>
+      </header>
+    </header>
+
+    <main id="chat-main" class="chats-main">
+      <div class="chats-main__date-time">
+        <span> 2022년 2월 15일 화요일 </span>
+      </div>
+
+      <div class="user-profile-component">
+        <div class="user-profile-component__column">
+          <div class="profile-img-wrap">
+            <img src="./img/redvelvet.jpeg" alt="유저 프로필 사진" />
+          </div>
+        </div>
+        <div class="user-profile-component__column">
+          <div class="user-profile-text">
+            <h4 class="user-name">Coco</h4>
+          </div>
+          <div class="message-bubble">
+            <div class="user-message-info">
+              <div class="message-info__read-mark"></div>
+              <div class="message-info__send-time">오후 9&#58;26</div>
+            </div>
+            <div class="status-message chats-message">
+              <p>우리 마지막으로 만난지 얼마나 됐지..? 보고싶네~</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-profile-component">
+        <div class="user-profile-component__column">
+          <div class="profile-img-wrap">
+            <img src="./img/redvelvet.jpeg" alt="유저 프로필 사진" />
+          </div>
+        </div>
+        <div class="user-profile-component__column">
+          <div class="user-profile-text">
+            <h4 class="user-name">Coco</h4>
+          </div>
+          <div class="message-bubble">
+            <div class="user-message-info">
+              <div class="message-info__read-mark"></div>
+              <div class="message-info__send-time">오후 9&#58;40</div>
+            </div>
+            <div class="status-message chats-message">
+              <p>요즘 잠은 잘자고?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-profile-component chats-user">
+        <div class="user-profile-component__column">
+          <div class="profile-img-wrap">
+            <img src="./img/rabbit.png" alt="유저 프로필 사진" />
+          </div>
+        </div>
+        <div class="user-profile-component__column">
+          <div class="user-profile-text">
+            <h4 class="user-name">Brave Rabbit</h4>
+          </div>
+          <div class="message-bubble">
+            <div class="user-message-info">
+              <div class="message-info__read-mark"></div>
+              <div class="message-info__send-time">오후 10&#58;00</div>
+            </div>
+            <div class="status-message chats-message message">
+              <p>우리 못 본 지 정말 오래된 것 같아~!! 나도 많이 보고 싶네~</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-profile-component chats-user">
+        <div class="user-profile-component__column">
+          <div class="profile-img-wrap">
+            <img src="./img/rabbit.png" alt="유저 프로필 사진" />
+          </div>
+        </div>
+        <div class="user-profile-component__column">
+          <div class="user-profile-text">
+            <h4 class="user-name">Brave Rabbit</h4>
+          </div>
+          <div class="message-bubble">
+            <div class="user-message-info">
+              <div class="message-info__read-mark"></div>
+              <div class="message-info__send-time">오후 10&#58;04</div>
+            </div>
+            <div  class="status-message chats-message message">
+              <p>
+                밤에 생각이 좀 많아서 잠이 안오네.. 그래도 예전보단 나아졌어~!
+                조만간 보자구~ 잘자~!!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-profile-component">
+        <div class="user-profile-component__column">
+          <div class="profile-img-wrap">
+            <img src="./img/redvelvet.jpeg" alt="유저 프로필 사진" />
+          </div>
+        </div>
+        <div class="user-profile-component__column">
+          <div class="user-profile-text">
+            <h4 class="user-name">Coco</h4>
+          </div>
+          <div class="message-bubble">
+            <div class="user-message-info">
+              <div class="message-info__read-mark"></div>
+              <div class="message-info__send-time">오후 10&#58;46</div>
+            </div>
+            <div class="status-message chats-message">
+              <p>그래! 알았어! 잘자구~!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 문제 발생 부분 -->
+      <div class="user-profile-component chats-user">
+        <div class="user-profile-component__column">
+          <div class="profile-img-wrap">
+            <img src="./img/rabbit.png" alt="유저 프로필 사진" />
+          </div>
+        </div>
+        <div class="user-profile-component__column">
+          <div class="user-profile-text">
+            <h4 class="user-name">Brave Rabbit</h4>
+          </div>
+          <div class="message-bubble">
+            <div class="user-message-info">
+              <div class="message-info__read-mark"></div>
+              <div class="message-info__read-mark">1</div>
+              <div class="message-info__send-time">오후 1&#58;27</div>
+            </div>
+            <div id="last-message" class="status-message chats-message">
+              <p>문제 되는 부분</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    <div class="reply">
+      <form class="reply-wrap">
+        <div class="reply__column">
+          <button class="btn--add-media">
+            <i class="fa-regular fa-square-plus"></i>
+          </button>
+        </div>
+        <div class="reply__column">
+          <input
+            id="input-message"
+           
+            type="text"
+            placeholder="메시지를 입력해주세요."
+            inputmode="none"
+          />
+          <i class="far fa-smile-wink fa-lg"></i>
+          <button id="btn-send" class="btn--send">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
+      </form>
+
+
+      <div class="keyboard">
+        <div class="key-row">
+          <button>ㅂ</button>
+          <button>ㅈ</button>
+          <button>ㄷ</button>
+          <button>ㄱ</button>
+          <button>ㅅ</button>
+          <button>ㅛ</button>
+          <button>ㅕ</button>
+          <button>ㅑ</button>
+          <button>ㅐ</button>
+          <button>ㅔ</button>
+        </div>
+        <div class="key-row">
+          <button>ㅁ</button>
+          <button>ㄴ</button>
+          <button>ㅇ</button>
+          <button>ㄹ</button>
+          <button>ㅎ</button>
+          <button>ㅗ</button>
+          <button>ㅓ</button>
+          <button>ㅏ</button>
+          <button>ㅣ</button>
+        </div>
+        <div class="key-row">
+          <button class="btn--ch-letter-case btn--dark">
+            <i class="fa-solid fa-angle-up"></i>
+          </button>
+          <button>ㅋ</button>
+          <button>ㅌ</button>
+          <button>ㅊ</button>
+          <button>ㅍ</button>
+          <button>ㅠ</button>
+          <button>ㅜ</button>
+          <button>ㅡ</button>
+          <button class="btn--dark btn--delete">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+        </div>
+        <div class="key-row">
+          <button class="btn--dark">123</button>
+          <button class="btn--dark">
+            <i class="fa-solid fa-globe"></i>
+          </button>
+          <button>
+            <i class="fa-solid fa-microphone"></i>
+          </button>
+          <button class="btn-space">간격</button>
+          <button class="btn--dark">
+            <i class="fas fa-level-down"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./chat.js"></script>
+   
+  </body>
+</html>

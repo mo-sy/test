@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>친구목록 | 달고나톡</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Mobile Only -->
+    <div class="mobile-only-screen">
+      <span>
+        &#34;달고나톡은 현재 보고 계신 화면보다 <br />
+        더 작은 화면에서 실행이 가능합니다!&#34;
+      </span>
+    </div>
+
+    <div class="header-status-pagination">
+      <div class="status-bar">
+        <div class="status-bar__container">
+          <div class="status-bar__column">
+            <i class="fa-solid fa-signal"></i>
+            <span class="carrier-name">DAL</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span class="time">오후 3&#58;26</span>
+          </div>
+          <div class="status-bar__column">
+            <span>100&#37;</span>
+            <span class="battery">
+              <i class="fa-solid fa-battery-full"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <header class="page-header">
+        <h1 class="page-header__title">친구목록</h1>
+        <div class="page-header__icons">
+          <span class="header__btn--search">
+            <i class="fas fa-search fa-lg"></i>
+          </span>
+          <span class="btn--music">
+            <i class="fas fa-music fa-lg"></i>
+          </span>
+          <span class="btn--to-setting">
+            <a href="./settings.html">
+              <i class="fas fa-cog fa-lg">
+                <div class="noti noti-for-cog"></div>
+              </i>
+            </a>
+          </span>
+        </div>
+      </header>
+    </div>
+    <main class="main friends-main">
+      <div class="user-profile-component first-user friends-user">
+        <div class="user-profile-component__column">
+          <div class="profile-img-wrap">
+            <img src="./img/rabbit.png" alt="유저 프로필 사진" />
+          </div>
+        </div>
+        <div class="user-profile-component__column">
+          <div class="user-profile-text">
+            <h4 class="user-name">Brave Rabbit</h4>
+          </div>
+          <div class="status-message">
+            <p>우릴 힘들게 하는 나쁜 생각들에게, 무섭게 겁을 줄 거야!</p>
+          </div>
+        </div>
+      </div>
+      <div class="friends-channel">
+        <div class="friends-channel__header">
+          <span class="friends-channel__title">Channel</span>
+        </div>
+        <div class="friends-channel__column">
+          <div class="user-profile-component friends-user">
+            <div class="user-profile-component__column">
+              <div class="profile-img-wrap">
+                <img src="./img/cookie.jpg" alt="유저 프로필 사진" />
+              </div>
+            </div>
+            <div class="user-profile-component__column user-profile-text">
+              <h4 class="user-name">Channel Cookie</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="friends-list">
+        <div class="friends-channel__header">
+          <span class="friends-channel__title">Friends</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <ul class="friends-list">
+          <li class="friends-user">
+            <div class="user-profile-component">
+              <div class="user-profile-component__column">
+                <div class="profile-img-wrap">
+                  <img src="./img/dog.jpg" alt="유저 프로필 사진" />
+                </div>
+              </div>
+              <div class="user-profile-component__column">
+                <div class="user-profile-text">
+                  <h4 class="user-name">Coco</h4>
+                </div>
+                <div class="status-message">
+                  <p>신기한 자바스크립트! 같이 공부할 사람!?</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="friends-user">
+            <div class="user-profile-component">
+              <div class="user-profile-component__column">
+                <div class="profile-img-wrap">
+                  <img src="./img/lion.jpg" alt="유저 프로필 사진" />
+                </div>
+              </div>
+              <div class="user-profile-component__column">
+                <div class="user-profile-text">
+                  <h4 class="user-name">Happy Lion</h4>
+                </div>
+                <div class="status-message">
+                  <p>다들 공부만 하는구나..</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="friends-user">
+            <div class="user-profile-component">
+              <div class="user-profile-component__column">
+                <div class="profile-img-wrap">
+                  <img src="./img/shark.png" alt="유저 프로필 사진" />
+                </div>
+              </div>
+              <div class="user-profile-component__column">
+                <div class="user-profile-text">
+                  <h4 class="user-name">Smart tom</h4>
+                </div>
+                <div class="status-message">
+                  <p>배움의 기쁨을 즐기는 중~~~</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./chat-list.html">
+            <div class="noti noti-count noti-for-comment">
+              <span>1</span>
+            </div>
+            <i class="fa-regular fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./find.html">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./more.html">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- hidden screen for profile  -->
+    <div class="hidden-profile hidden-profile--rabbit">
+      <div class="status-bar">
+        <div class="status-bar__container">
+          <div class="status-bar__column">
+            <i class="fa-solid fa-signal"></i>
+            <span class="carrier-name">DAL</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span class="time">오후 3&#58;26</span>
+          </div>
+          <div class="status-bar__column">
+            <span>100&#37;</span>
+            <span class="battery">
+              <i class="fa-solid fa-battery-full"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-profile__header">
+        <div class="hidden-profile__header__col">
+          <button class="btn--close">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <div class="hidden-profile__header__col">
+          <button class="btn--gift">
+            <i class="fa-solid fa-gift"></i>
+          </button>
+          <button class="btn--favorites">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+        </div>
+      </div>
+      <div class="hidden-profile__profile">
+        <div class="hidden-profile__wrap">
+          <div class="profile-img-wrap">
+            <img src="./img/rabbit.png" alt="유저 프로필 사진" />
+          </div>
+          <div class="user-profile-text">
+            <h4 class="user-name">Brave Rabbit</h4>
+          </div>
+        </div>
+        <div class="hidden-profile__btns">
+          <button class="btn--chat">
+            <i class="fa-solid fa-comment"></i>
+            <span>나와의 채팅</span>
+          </button>
+          <button class="btn--message">
+            <i class="fa-solid fa-envelope"></i>
+            <span>나에게 메시지 보내기</span>
+          </button>
+          <button class="btn--call">
+            <i class="fa-solid fa-pencil"></i>
+            <span>프로필 편집</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden-profile hidden-profile--cookie">
+      <div class="status-bar">
+        <div class="status-bar__container">
+          <div class="status-bar__column">
+            <i class="fa-solid fa-signal"></i>
+            <span class="carrier-name">DAL</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span class="time">오후 3&#58;26</span>
+          </div>
+          <div class="status-bar__column">
+            <span>100&#37;</span>
+            <span class="battery">
+              <i class="fa-solid fa-battery-full"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-profile__header">
+        <div class="hidden-profile__header__col">
+          <button class="btn--close">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <div class="hidden-profile__header__col">
+          <button class="btn--gift">
+            <i class="fa-solid fa-gift"></i>
+          </button>
+          <button class="btn--favorites">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+        </div>
+      </div>
+      <div class="hidden-profile__profile">
+        <div class="hidden-profile__wrap">
+          <div class="profile-img-wrap">
+            <img src="./img/cookie.jpg" alt="유저 프로필 사진" />
+          </div>
+          <div class="user-profile-text">
+            <h4 class="user-name">Channel Cookie</h4>
+          </div>
+        </div>
+        <div class="hidden-profile__btns">
+          <button
+            class="btn--chat"
+            onclick="location.href='chats-cookie.html';"
+          >
+            <i class="fa-solid fa-comment"></i>
+            <span>채팅하기</span>
+          </button>
+          <button class="btn--message">
+            <i class="fa-solid fa-envelope"></i>
+            <span>메시지 보내기</span>
+          </button>
+          <button class="btn--call">
+            <i class="fa-solid fa-phone"></i>
+            <span>통화하기</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden-profile hidden-profile--coco">
+      <div class="status-bar">
+        <div class="status-bar__container">
+          <div class="status-bar__column">
+            <i class="fa-solid fa-signal"></i>
+            <span class="carrier-name">DAL</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span class="time">오후 3&#58;26</span>
+          </div>
+          <div class="status-bar__column">
+            <span>100&#37;</span>
+            <span class="battery">
+              <i class="fa-solid fa-battery-full"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-profile__header">
+        <div class="hidden-profile__header__col">
+          <button class="btn--close">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <div class="hidden-profile__header__col">
+          <button class="btn--gift">
+            <i class="fa-solid fa-gift"></i>
+          </button>
+          <button class="btn--favorites">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+        </div>
+      </div>
+      <div class="hidden-profile__profile">
+        <div class="hidden-profile__wrap">
+          <div class="profile-img-wrap">
+            <img src="./img/dog.jpg" alt="유저 프로필 사진" />
+          </div>
+          <div class="user-profile-text">
+            <h4 class="user-name">Coco</h4>
+          </div>
+        </div>
+        <div class="hidden-profile__btns">
+          <button class="btn--chat" onclick="location.href='chats-coco.html';">
+            <i class="fa-solid fa-comment"></i>
+            <span>채팅하기</span>
+          </button>
+          <button class="btn--message">
+            <i class="fa-solid fa-envelope"></i>
+            <span>메시지 보내기</span>
+          </button>
+          <button class="btn--call">
+            <i class="fa-solid fa-phone"></i>
+            <span>통화하기</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden-profile hidden-profile--lion">
+      <div class="status-bar">
+        <div class="status-bar__container">
+          <div class="status-bar__column">
+            <i class="fa-solid fa-signal"></i>
+            <span class="carrier-name">DAL</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span class="time">오후 3&#58;26</span>
+          </div>
+          <div class="status-bar__column">
+            <span>100&#37;</span>
+            <span class="battery">
+              <i class="fa-solid fa-battery-full"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-profile__header">
+        <div class="hidden-profile__header__col">
+          <button class="btn--close">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <div class="hidden-profile__header__col">
+          <button class="btn--gift">
+            <i class="fa-solid fa-gift"></i>
+          </button>
+          <button class="btn--favorites">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+        </div>
+      </div>
+      <div class="hidden-profile__profile">
+        <div class="hidden-profile__wrap">
+          <div class="profile-img-wrap">
+            <img src="./img/lion.jpg" alt="유저 프로필 사진" />
+          </div>
+          <div class="user-profile-text">
+            <h4 class="user-name">Happy Lion</h4>
+          </div>
+        </div>
+        <div class="hidden-profile__btns">
+          <button class="btn--chat">
+            <i
+              class="fa-solid fa-comment"
+              onclick="location.href='chats-lion.html';"
+            ></i>
+            <span>채팅하기</span>
+          </button>
+          <button class="btn--message">
+            <i class="fa-solid fa-envelope"></i>
+            <span>메시지 보내기</span>
+          </button>
+          <button class="btn--call">
+            <i class="fa-solid fa-phone"></i>
+            <span>통화하기</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden-profile hidden-profile--tom">
+      <div class="status-bar">
+        <div class="status-bar__container">
+          <div class="status-bar__column">
+            <i class="fa-solid fa-signal"></i>
+            <span class="carrier-name">DAL</span>
+            <i class="fas fa-wifi"></i>
+          </div>
+          <div class="status-bar__column">
+            <span class="time">오후 3&#58;26</span>
+          </div>
+          <div class="status-bar__column">
+            <span>100&#37;</span>
+            <span class="battery">
+              <i class="fa-solid fa-battery-full"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="hidden-profile__header">
+        <div class="hidden-profile__header__col">
+          <button class="btn--close">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <div class="hidden-profile__header__col">
+          <button class="btn--gift">
+            <i class="fa-solid fa-gift"></i>
+          </button>
+          <button class="btn--favorites">
+            <i class="fa-solid fa-heart"></i>
+          </button>
+        </div>
+      </div>
+      <div class="hidden-profile__profile">
+        <div class="hidden-profile__wrap">
+          <div class="profile-img-wrap">
+            <img src="./img/shark.png" alt="유저 프로필 사진" />
+          </div>
+          <div class="user-profile-text">
+            <h4 class="user-name">Smart tom</h4>
+          </div>
+        </div>
+        <div class="hidden-profile__btns">
+          <button class="btn--chat" onclick="location.href='chats-tom.html';">
+            <i class="fa-solid fa-comment"></i>
+            <span>채팅하기</span>
+          </button>
+          <button class="btn--message">
+            <i class="fa-solid fa-envelope"></i>
+            <span>메시지 보내기</span>
+          </button>
+          <button class="btn--call">
+            <i class="fa-solid fa-phone"></i>
+            <span>통화하기</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="js/hidden-profile.js"></script>
+  </body>
+</html>

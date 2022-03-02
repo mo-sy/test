@@ -1,0 +1,263 @@
+.chats-main {
+  position: fixed;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  width: 100%;
+  height: 100%;
+  padding: 100px 20px 100px;
+  transition: transform 0.4s;
+}
+
+.chats-background .battery .fa-battery-full {
+  color: #fff;
+}
+
+.chats-main .user-profile-component {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.chats-main::-webkit-scrollbar {
+  display: none;
+}
+
+.chats-header__column i:hover {
+  color: #fff;
+}
+
+.chats-main.with-keyboard {
+  transform: translateY(-184px);
+  transition: transform 0.4s;
+}
+
+.chats-background {
+  color: #fff;
+  background-color: var(--purple);
+}
+
+.header-status-user {
+  position: fixed;
+  width: 100%;
+  background-color: var(--purple);
+  z-index: 999;
+}
+
+.chats-background .status-bar {
+  background-color: var(--purple);
+  opacity: 0.9;
+}
+
+.chats-header {
+  display: flex;
+  padding: 2px 15px 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chats-header__column {
+  width: 33%;
+}
+
+.chats-header__column:first-child {
+  margin-right: auto;
+}
+
+.chats-header__column:nth-child(2) {
+  text-align: center;
+  font-weight: 600;
+}
+
+.chats-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.chats-header-name {
+  font-size: 24px;
+  text-indent: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fa-angle-left {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.fa-bars {
+  margin-left: 18px;
+}
+
+.chats-main__date-time {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.chats-main__date-time span {
+  display: inline-block;
+  background-color: rgba(90, 50, 202, 0.4);
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: 300;
+}
+
+.chats-main .user-name {
+  font-weight: 100;
+}
+
+.chats-main .user-profile-component {
+  align-items: flex-start;
+}
+
+.chats-main .user-profile-component__column:first-child {
+  margin-right: 10px;
+  height: 100%;
+}
+
+.chats-message {
+  word-break: keep-all;
+  border-top-left-radius: 0;
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  max-width: 200px;
+}
+
+.chats-user {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.chats-user .chats-message {
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 0;
+  margin-right: 0;
+}
+
+.chats-user .user-profile-component__column:first-child {
+  display: none;
+  margin-right: 0;
+}
+
+.chats-user .user-profile-component__column {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.chats-user .user-name,
+.chats-user .profile-img-wrap {
+  display: none;
+}
+
+.chats-user .chats-message {
+  background-color: var(--yellow);
+  margin-left: 10px;
+}
+
+.chats-user .message-bubble {
+  flex-direction: row;
+}
+
+.message-bubble {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.message-info__send-time {
+  font-size: 12px;
+  color: #eee;
+}
+
+.message-info__read-mark {
+  color: var(--yellow);
+  font-size: 12px;
+  text-align: right;
+}
+
+.next-date-time-message {
+  padding-top: 0;
+}
+
+/* reply */
+.reply {
+  bottom: -168px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  transition: bottom 0.4s;
+  background-color: #fff;
+}
+
+.reply.active {
+  bottom: 0;
+}
+
+.reply-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.reply__column:last-child {
+  position: relative;
+  width: 100%;
+}
+
+.reply__column input {
+  width: 100%;
+  padding-left: 20px;
+  height: 40px;
+  border-radius: 20px;
+  display: inline-block;
+  border: 1px solid var(--main-border-color);
+}
+
+.fa-smile-wink {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+.reply__column,
+.btn--add-media {
+  color: var(--gray);
+}
+
+.btn--add-media {
+  font-size: 22px;
+  margin-right: 20px;
+}
+
+.btn--send {
+  position: absolute;
+  color: #000;
+  top: 5px;
+  right: 1%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+}
+
+/* Animation chat bubble appear */
+.chats-main .user-profile-component:not(.chats-user) {
+  animation: inPlace 0.8s forwards linear;
+  transform: translateX(-1000px);
+}
+
+.chats-main .user-profile-component.chats-user {
+  animation: inPlace 0.8s linear forwards;
+  transform: translateX(1000px);
+}
+
+@keyframes inPlace {
+  to {
+    transform: translateX(0);
+  }
+}

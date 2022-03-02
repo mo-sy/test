@@ -1,0 +1,55 @@
+.keyboard {
+  width: 100%;
+  background-color: rgb(247, 245, 245);
+  border: none;
+}
+
+.key-row {
+  width: 100%;
+  display: flex;
+}
+
+.key-row button {
+  margin: 5px;
+  transition: backgroundColor 0.3s;
+  padding: 8px;
+  width: 100%;
+}
+
+.key-row button:active {
+  opacity: 0.7;
+}
+
+.key-row button:not(.btn--dark) {
+  background-color: rgb(231, 231, 231);
+  color: #333;
+}
+
+.key-row:last-child {
+  display: flex;
+}
+
+.key-row:last-child button {
+  flex: 1;
+}
+
+.key-row:last-child button:nth-child(1),
+.key-row:last-child button:nth-child(2),
+.key-row:last-child button:nth-child(3) {
+  flex: 0;
+}
+
+.key-row:last-child .btn-space {
+  flex: 2;
+}
+
+.btn--dark {
+  background-color: #52538a;
+  color: #fff;
+  width: 100%;
+}
+
+.fa-level-down {
+  transform: rotate(90deg);
+  width: 100%;
+}

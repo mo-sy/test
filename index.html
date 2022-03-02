@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+
+    <title>환영합니다 | 달고나톡</title>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="splash">
+      <h1 class="fade-in">DALGONA</h1>
+    </div>
+    <!-- Mobile Only -->
+    <div class="mobile-only-screen">
+      <span>
+        &#34;달고나톡은 현재 보고 계신 화면보다 <br />
+        더 작은 화면에서 실행이 가능합니다!&#34;
+      </span>
+    </div>
+
+    <div class="status-bar">
+      <div class="status-bar__container">
+        <div class="status-bar__column">
+          <i class="fa-solid fa-signal"></i>
+          <span class="carrier-name">DAL</span>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+          <span class="time">오후 3&#58;26</span>
+        </div>
+        <div class="status-bar__column">
+          <span>100&#37;</span>
+          <span class="battery">
+            <i class="fa-solid fa-battery-full"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">달고나톡에 오신걸 환영합니다!</h1>
+      <p class="welcome-header__text">
+        아직 달고나톡 계정이 없다면,<br />
+        이메일을 통해 로그인 해주세요!
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" id="form-login">
+      <div class="form-login__inputs">
+        <label for="login-id">
+          <span class="sr-only"> 로그인 </span>
+        </label>
+        <input
+          required
+          class="form-login__id"
+          type="email"
+          id="login-id"
+          placeholder="이메일 주소"
+          name="id-name"
+        />
+        <label for="login-pw">
+          <span class="sr-only">비밀번호</span>
+        </label>
+        <input
+          required
+          minlength="4"
+          id="login-pw"
+          class="form-login__pw"
+          type="password"
+          placeholder="비밀번호"
+          name="pass"
+        />
+      </div>
+      <div>
+        <input class="btn--login" type="submit" value="로그인" />
+      </div>
+      <ul class="find-join-wrap">
+        <li><a href="#none">비밀번호 찾기</a></li>
+        <li><a href="#none">아이디 찾기</a></li>
+        <li><a href="#none">회원가입</a></li>
+      </ul>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
